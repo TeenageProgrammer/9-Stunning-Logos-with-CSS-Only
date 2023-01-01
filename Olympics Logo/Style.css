@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    display: flex;
+}
+
+.logo2{
+    margin-top: -85px;
+}
+
+.circle{
+    width: 240px;
+    height: 240px;
+    background: transparent;
+    border: 16px solid #000;
+    border-radius: 50%;
+    margin: -6px 12px;
+    position: relative;
+}
+
+.circle::after{
+    content: '';
+    position: absolute;
+    inset: -16px;
+    border-radius: 50%;
+    border: 16px solid transparent;
+}
+
+.logo1 .circle:nth-child(1){
+    border: 16px solid #0085C7;
+}
+
+.logo1 .circle:nth-child(1)::after{
+    border-right: 16px solid #0085C7;
+    z-index: 100;
+}
+
+.logo1 .circle:nth-child(2){
+    border: 16px solid #000;
+}
+
+.logo1 .circle:nth-child(2)::after{
+    border-right: 16px solid #000;
+    border-bottom: 16px solid #000;
+    z-index: 100;
+}
+
+.logo1 .circle:nth-child(3){
+    border: 16px solid #DF0024;
+}
+
+.logo1 .circle:nth-child(3)::after{
+    border-bottom: 16px solid #DF0024;
+    z-index: 100;
+}
+
+.logo2 .circle:nth-child(1){
+    border: 16px solid #F4C300;
+}
+
+.logo2 .circle:nth-child(1)::after{
+    border-left: 16px solid #F4C300;
+    z-index: 100;
+}
+
+.logo2 .circle:nth-child(2){
+    border: 16px solid #009F3D;
+}
+
+.logo2 .circle:nth-child(2)::after{
+    border-left: 16px solid #009F3D;
+}
